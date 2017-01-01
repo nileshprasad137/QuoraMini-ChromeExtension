@@ -10,16 +10,16 @@ This Chrome Extension is for Quora readers. It sends desktop notifications perio
 ##Screenshots
 ####When browser runs for first time
 ![AN IMAGE IS SUPPOSED TO BE HERE](img/login.png)
-####Click on the extension icon
-![AN IMAGE IS SUPPOSED TO BE HERE](img/s2.PNG)
+####On clicking on the extension icon
+![AN IMAGE IS SUPPOSED TO BE HERE](img/feed.PNG)
 ####Sends desktop notifications
 ![AN IMAGE IS SUPPOSED TO BE HERE](img/s1.png)
 
 ##Installation
-1. [Download Zip Folder](https://github.com/nileshprasad137/QuoraMini-ChromeExtension.git)
+1. [Download Zip Folder](https://github.com/nileshprasad137/QuoraMini-ChromeExtension/archive/master.zip)
 2. Extract the folder.
 3. Go to Chrome -> Customize -> Tools -> Extensions.
 4. Check on developer mode.
 5. Load unpacked extension.
-6. Select Quora-Chrome-Extension folder.
+6. Select QuoraMini-ChromeExtension folder.
 

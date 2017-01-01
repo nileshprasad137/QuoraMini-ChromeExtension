@@ -52,4 +52,11 @@ $(function(){
 	})
 })
 
+$(document).ready(function()
+{
+
+	$("body").on('click',".fa-code", function(){
+	    chrome.tabs.create({ url: "https://github.com/nileshprasad137/QuoraMini-ChromeExtension" });
+	  });
+})
 
