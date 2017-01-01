@@ -1,0 +1,32 @@
+{
+	"manifest_version" : 2,
+
+	"name" : "QuoraFeed",
+	"description" : "This chrome extension keeps you updated with latest QuoraFeed.",
+	"version" : "1.0",
+
+	"browser_action" :
+	{
+		
+		"default_popup" : "popup.html"
+	},
+
+	"icons": { "16": "img/extension_icon.png",
+	           "32": "img/extension_icon.png",
+	           "48": "img/extension_icon.png",
+			   "128": "img/extension_icon.png" },
+
+	"background":
+	{
+		"page" : "background.html"
+	},
+
+	"permissions" : 
+	[
+		"storage",
+		"notifications",
+		"https://www.quora.com/"
+	]
+	
+	
+}
