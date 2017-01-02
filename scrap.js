@@ -8,7 +8,8 @@ var new_feed = [];//stores the newfeed questions
 
 var i,j;//iterator
 var latest_feed_id;//stores the latest feed's id
-var latest_feed_question = [];//stores the latest feed's questions
+var latest_feed_question = [];//stores all the latest feed's questions
+var latest_trending_topic = [];//stores all the trending topics
 var latest_trending;
 
 var count = 0;//stores the count of new feeds
@@ -16,7 +17,7 @@ var count = 0;//stores the count of new feeds
 $(function()
 {
 	get_my_feed();
-	setInterval(get_my_feed,300000);
+	setInterval(get_my_feed,30000);
 	//get the update in an interval of 5 minutes
 });
 
@@ -72,6 +73,12 @@ function get_my_feed()
 			{
 				latest_feed_question[i] = feeds[i];
 			}	
+
+			for(i=0;i<trending_topics_list.length;i++)
+			{
+				latest_trending_topic[i] = trending_topics_list[i];
+				//console.log(latest_trending_topic);//debug
+			}
 
 
 		}
@@ -175,5 +182,38 @@ function get_update()
 			chrome.notifications.create(new_feed_notifier);
 
 	}
+
+	var count_trending = 0 ,flag = 0;
+	var trend_to_be_notified;
+	for(i=0;i<5;i++)
+	{
+		if( (trending_topics_list[i] != latest_trending_topic[i]) && (!(trending_topics_list[i] === undefined) )) 
+		{
+			//new trend 
+			flag = 1;
+			trend_to_be_notified = trending_topics_list[i];
+			break;
+		}
+		//console.log(trending_topics_list[i]);		
+	}
+
+	if(flag == 0)
+	{
+		//console.log('nothing new');
+	}
+	else
+	{
+		var new_trend_notifier = {
+				type : "basic",
+				title : "New trend",
+				message : trend_to_be_notified,
+				iconUrl : "img/extension_icon.png"
+			};
+
+			chrome.notifications.create(new_trend_notifier);
+
+	}
+
+	//console.log(count_trending);
 }
 

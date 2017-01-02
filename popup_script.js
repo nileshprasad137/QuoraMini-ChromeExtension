@@ -38,6 +38,7 @@ $(function(){
 
 		else
 		{
+			//$("#loading").remove();
 			$("br" ).remove();//remove all the breaklines which were added earlier.
 			$('body').append("<div>You are currently logged out of Quora, you need to first login .</div>");
 			$('body').append("<hr><a href='https://www.quora.com/' target='_blank'>Login</a><hr>");	
