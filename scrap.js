@@ -203,6 +203,11 @@ function get_update()
 	}
 	else
 	{
+		for(i=0;<trending_topics_list.length;i++)
+		{
+			latest_trending_topic[i] = trending_topics_list[i];
+		}
+
 		var new_trend_notifier = {
 				type : "basic",
 				title : "New trend",
