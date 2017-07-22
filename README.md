@@ -10,9 +10,9 @@ This Chrome Extension is for Quora readers. It sends desktop notifications perio
 ## Screenshots
 #### When browser runs for first time
 ![AN IMAGE IS SUPPOSED TO BE HERE](img/login.png)
-####On clicking on the extension icon
+#### On clicking on the extension icon
 ![AN IMAGE IS SUPPOSED TO BE HERE](img/feed.PNG)
-####Sends desktop notifications
+#### Sends desktop notifications
 ![AN IMAGE IS SUPPOSED TO BE HERE](img/s1.png)
 
 ## Installation
